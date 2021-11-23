@@ -62,7 +62,7 @@ export function createTimer({ seconds, onChange, onFinish }) {
 
                 onFinish();
             }
-        }, 0)
+        }, 1000)
     }
 
     function clear() {
