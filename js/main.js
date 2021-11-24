@@ -123,18 +123,14 @@ function startTimer() {
     timer.start();
 }
 
-
-initColors();
-
-attachEventForColorsList();
-
 setBackgroundColor('goldenrod');
-
-attachEventForPlayAgainButton();
 
 var startBtn = document.querySelector('.game__button-start');
 startBtn.classList.add('show');
 startBtn.onclick = function() {
+    attachEventForPlayAgainButton();
+    initColors();
+    attachEventForColorsList();
     startBtn.classList.remove('show');
     startTimer();
 }
